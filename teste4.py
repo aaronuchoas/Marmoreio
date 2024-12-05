@@ -12,7 +12,7 @@ def carregar_imagem():
     )
     return file_path
 
-# Função para exibir uma imagem usando Matplotlib
+# Função para exibir uma imagem
 def exibir_imagem(titulo, imagem, cmap=None):
     plt.figure()
     plt.imshow(imagem, cmap=cmap)
@@ -92,7 +92,7 @@ def analisar_imagem():
     except Exception as e:
         label_resultado.config(text=f"Erro durante a análise: {str(e)}")
 
-# Configuração da interface gráfica
+# Interface gráfica
 root = Tk()
 root.title("Classificador de Marmoreio de Carnes")
 root.geometry("500x400")
@@ -127,5 +127,5 @@ botao_carregar.pack(pady=10)
 label_resultado = Label(root, text="", wraplength=400, justify="center", bg="#f2f2f2", fg="#333", font=("Arial", 11))
 label_resultado.pack(pady=20)
 
-# Iniciar o loop principal
+# Reiniciar
 root.mainloop()
