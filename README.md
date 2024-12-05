@@ -4,26 +4,28 @@ Este projeto utiliza processamento de imagens em Python para avaliar o grau de m
 
 ## Requisitos
 
-Certifique-se de ter o Python instalado em sua máquina. Utilize um ambiente virtual para instalar as bibliotecas necessárias:
+Certifique-se de ter o Python instalado em sua máquina.
 
-1. Crie um ambiente virtual:
-   ```bash
-   python -m venv venv
+1. Dica: Salve a paste em um caminho curto:
+    ```bash
+    Ex: C:\Users\<seu_nome_de_usuário>
 
 2. Baixe as seguintes bibliotecas no prompt do VScode:
    ```bash
-   pip install numpy opencv-python matplotib
+   pip install opencv-python
+   pip install matplotlib
+   pip install numpy
+   pip install pillow
 
-3. Na linha 6, informe o nome da imagem .jpg que queria rodar:
-   ```bash
-   image_path = "nome_da_imagem.jpg"
 4. Para rodar uma imagem, devemos manualmente fazer um contorno na cor VERDE da área a ser avaliada;
 
-5. Feito esse procedimento, aperte RUN CODE ou execute no terminal:
-   ```bash
-   python Classificacao.py
+5. Feito esse procedimento, aperte RUN CODE:
 
-6. O código irá gerar uma imagem por etapa, concluindo com:
+6. Na tela inicial selecione a raça e aperte em CARREGAR IMAGEM.
+
+7. Selecione a imagem para analise.
+
+8. O código irá gerar um processamento por etapa, concluindo com:
  ```bash
    A quantidade de pixels de marmoreio
    A porcentagem de marmoreio
